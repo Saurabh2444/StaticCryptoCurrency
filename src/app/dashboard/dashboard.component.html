@@ -1,0 +1,135 @@
+<div class="container">
+    <div class="item aside">
+        <app-aside></app-aside>
+    </div>
+    
+    <div class="item main">
+        <div class="text main1">
+            <div [ngStyle]="{'float':'left','font-size':'18px','margin':'14px 0 0 18px'}"><i class="fa-solid fa-circle-exclamation"></i><span [ngStyle]="{'margin-left':'5px'}">Exchange Not Connected</span></div>
+            <div [ngStyle]="{'float':'right'}"><span  [ngStyle]="{'font-size':'18px','margin':'35px 8px 0 0'}">Trial Subscription - 7 more days left</span><span><button class="btn" [ngStyle]="{'font-size':'12px','margin':'10px 8px 0 0'}">Renew Subscription</button></span></div>
+        </div>
+        <div class="text main2">
+            <div class="list1"><i class="fa-solid fa-money-check-dollar"></i><span class="bold">Balance</span></div>
+            <div class="list2">&dollar;25,200.97</div>
+            <div class="list3">
+                &darr;Invested <div>&dollar;10,458.00 <span class="v1"></span></div>
+            </div>
+            <div class="list4">
+                &uarr; &percnt; Profit <div>+60% <span class="v1"></span></div>
+            </div>
+            <div class="list5">&uarr; USD Profit <div>&dollar;15,348.68</div></div>
+            <div class="list6"><button class="btn">Add Exchange</button></div>
+        </div>
+        <div class="text main3">
+            <div class="d1">
+                <canvas id="myChart"></canvas>
+            </div>
+            <div class="d2">
+                <ul>
+                    <li [ngStyle]="{'color':'#810481','font-size':'18px','font-weight':'600'}">Bitcoin</li>
+                    <b>&dollar;11,567.00</b>
+                </ul>
+            </div>
+            <div class="d3">
+                <ul>
+                    <li [ngStyle]="{'color':'rgb(147, 142, 224)','font-size':'18px','font-weight':'600'}">Ethereum</li>
+                    <b>&dollar;5,583.00</b>
+                </ul>
+            </div>
+            <div class="d4">
+                <ul>
+                    <li [ngStyle]="{'color':'rgb(232, 211, 240)','font-size':'18px','font-weight':'600'}">Monero</li>
+                    <b>&dollar;8,050.00</b>
+                </ul>
+            </div>
+        </div>
+        <div class="text main4">
+            <div class="l1">
+                <i class="fa-solid fa-briefcase"></i><span class="bold">Portfolio 1</span>
+            </div>
+            <div class="l2">
+               <i> Day </i><div  class="bold">&uarr;3.7%</div>
+            </div>
+            <div class="l3">
+                <canvas id="myChart1"></canvas>
+            </div>
+            <div class="l4">
+               <i> Week</i> <div class="bold">&darr;7% <span class="v2"></span></div>
+            </div>
+            <div class="l5">
+               <i> Year</i> <div class="bold">&uarr;29% <span class="v2"></span></div>
+            </div>
+            <div class="l6">
+              <i>  All Time </i><div class="bold">&uarr;254%</div>
+            </div>
+        </div>
+        <div class="text main5">
+            <div class="l1">
+                <i class="fa-solid fa-briefcase"></i><span class="bold">Portfolio 2</span>
+            </div>
+            <div class="l2">
+              <i>  Day </i><div class="bold">&uarr;3.7%</div>
+            </div>
+            <div class="l3">
+                <canvas id="myChart2"></canvas>
+            </div>
+            <div class="l4">
+              <i>  Week </i><div class="bold">&darr;7% <span class="v2"></span></div>
+            </div>
+            <div class="l5">
+              <i>  Year </i><div class="bold">&uarr;29% <span class="v2"></span></div>
+            </div>
+            <div class="l6">
+              <i>  All Time </i><div class="bold">&uarr;254%</div>
+            </div>
+        </div>
+        <div class="text main6">
+            <div class="l1">
+                <i class="fa-solid fa-briefcase"></i><span class="bold">Portfolio 3</span>
+            </div>
+            <div class="l2">
+               <i> Day </i><div class="bold">&uarr;3.7%</div>
+            </div>
+            <div class="l3">
+                <canvas id="myChart3"></canvas>
+            </div>
+            <div class="l4">
+               <i> Week </i><div class="bold">&darr;7% <span class="v2"></span></div>
+            </div>
+            <div class="l5">
+               <i> Year </i><div class="bold">&uarr;29% <span class="v2"></span></div>
+            </div>
+            <div class="l6">
+               <i> All Time </i><div class="bold">&uarr;254%</div>
+            </div>
+        </div>
+        <div class="text main7">
+            <div class="c1">
+                <i class="fa-solid fa-chart-simple" [ngStyle]="{'margin':'5px 0 0 5px','padding':'8px 0 0 8px'}"></i><span [ngStyle]="{'margin-left':'8px'}">Chart</span>
+            </div>
+            <div class="c2"><canvas [ngStyle]="{'height':'200px','width':'300px','padding':'0 0 0 20px'}" id="canChart"></canvas></div>
+        </div>
+        <div class="text main8">
+            <i class="fa-solid fa-arrow-right-arrow-left" [ngStyle]="{'float':'leftt','margin':'8px 0 0 8px'}"></i><span [ngStyle]="{'margin':'10px 0 0 8px'}">Transactions</span>
+            <button class="btn" [ngStyle]="{'float':'right','font-size':'12px','margin':'10px 8px 0 0'}">See All</button>
+            <div>
+               <span class="m8">&darr;</span>
+               <span class="bold">Buy <br><i> &dollar;250.00</i></span>
+               <span class="date">Apr 20,2020</span>
+            </div>
+            <div>
+                <span class="m8">&uarr;</span>
+                <span class="bold">Sell <br><i> &dollar;250.00</i></span>
+                <span class="date">Apr 10,2020</span>
+             </div>
+             <div>
+                <span class="m8">&uarr;</span>
+                <span class="bold">Sell <br><i> &dollar;250.00</i></span>
+                <span class="date">Apr 16,2020</span>
+             </div>
+        </div>
+    </div>
+    <div class="item profile">
+        <app-profile></app-profile>
+    </div>
+</div>

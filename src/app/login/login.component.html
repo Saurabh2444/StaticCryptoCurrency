@@ -1,0 +1,12 @@
+<div>
+<form #formData="ngForm">
+    <h1>LOGIN</h1>
+    <label>UserName</label>
+    <input type="text" required ngModel name="uName" #uName="ngModel" pattern="^[A-Za-z][A-Za-z0-9_]{7,29}$">
+    <span *ngIf="uName.touched && uName.invalid" [ngStyle]="{'color':'red','margin-top':'-20px'}">Must include UpperCase, LowerCase and Number!!!</span>
+    <label>PassWord</label>
+    <input type="password" required ngModel name="pass" #pass="ngModel" minlength="8" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$">
+    <span *ngIf="pass.touched && pass.invalid" [ngStyle]="{'color':'red','margin-top':'-20px'}">Must include UpperCase, LowerCase, Number and special character!!!</span>
+    <button (click)="goToDash()" [disabled]="formData.invalid">Login</button>
+</form>
+</div>

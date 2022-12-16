@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.item{
+    background-color: white;
+    margin: 9px;
+}
+.aside .aside-item{
+    margin-top: 228px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.aside .aside-item i{
+    margin: auto;
+    padding: 16px;
+    align-items: center;
+    font-size: 1.5em;
+}
+.aside i:hover{
+    color: rgb(129, 4, 129);
+    cursor: pointer;
+    transform: scale(1.2);
+    background-color: rgb(216, 206, 216);
+}

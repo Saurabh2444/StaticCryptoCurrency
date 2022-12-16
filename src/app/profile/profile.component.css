@@ -1,0 +1,79 @@
+.item{
+    background-color: white;
+    margin: 10px;
+}
+.btn{
+    color: purple;
+    cursor: pointer;
+    margin: 0 8px 0 0;
+    float: right;
+    font-size: 12px;
+    padding: 5px;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+}
+.btn:hover{
+    color: black;
+    background-color: rgb(240, 193, 235);
+}
+.profile img{
+    margin: 20px 0 0 15px;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+.profile .t1{
+    position: absolute;
+    top: 7%;
+    padding: 5px;
+}
+.profile{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 17vh 32vh 20vh;
+}
+.t1 i{
+    top:4px;
+    color:rgb(160, 23, 210);
+}
+.act{
+    font-weight: 800;
+}
+.act i{
+    margin-left: 12px;
+    font-weight: 300;
+}
+.recent{
+    margin-left:12px;
+    font-weight:800;
+    font-size:17px;
+}
+.money{
+    padding:10px 70px;
+    border:1px solid black;
+}
+.extra{
+    width: 270px;
+    height: 120px;
+    background-color: purple;
+    margin-top: 44px;
+    display: flex;
+    justify-content: center;
+    color: rgb(216, 206, 216);
+    flex-direction: column;
+    align-items: center;
+}
+.extra span{
+    margin: 8px;
+}
+.extra .btn{
+    background-color: purple;
+    color: rgb(216, 206, 216);
+     border: 1px solid white;
+     margin: 8px;
+}
+.extra i{
+    margin: -27px 8px 8px 8px;
+    font-size: 60px;
+}
